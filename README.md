@@ -41,6 +41,8 @@ If only one of “-energy_file” or “-freq_file” is specified, it will be u
 
 -incl_pict: if it included, a picture of the structure, rendered by pymol, will be added.
 
+-pml_file [file]: a file with pymol settings used for rendering the images.
+
 -pict_res_x [int] and -pict_res_y [int]: number of pixels in the x and y dimensions of the rendered images. Defaults  are 800 points for both.
 
 -pict_size [int]: size (in cm) of the picture included in the .doc file. Default is 7cm, which is good for 2-column documents.
@@ -63,6 +65,15 @@ Examples:
                    span_HLnotH: tries to expand all non-H atoms in the High Level layer.
                    eclipse_:5-11             searches an orientation in which 5 and 11 are eclipsed.
                    span_:5-11,4-8,3-7        searches an orientation in wich the bonds 5-11, 4-8, and 3-7 are shown longer.
+                   
+Treatment of ONIOM calculations:
+
+g16SI detects gaussian ONIOM calculations modifying its behaviour to:
+
+-Automatically add a character (“L”, “M” or “H”) for specifying the layer of each atom in the .doc file.
+-If used in the energy file, the “ONIOM extrapolated energy” will be printed. 
+-Add a different residue name in the generated .pdb file, so settings in pymol can allow different representations of each layer.
+
 
 
 
