@@ -460,7 +460,7 @@ def prepare_cart(molecule):
     cart=""
     i=0
     while i<len(molecule[1]):
-        cart=cart+" %2s    %- 10.6f%- 10.6f%- 10.6f %2s \n" %(molecule[1][i],molecule[0][i][0],molecule[0][i][1],molecule[0][i][2],molecule[3][i])
+        cart=cart+" %2s    %- 10.5f%- 10.5f%- 10.5f %2s \n" %(molecule[1][i],molecule[0][i][0],molecule[0][i][1],molecule[0][i][2],molecule[3][i])
         i=i+1
     return cart
 ########################End of functions for obtaining cartesian coordinates #########################
