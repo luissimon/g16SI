@@ -71,7 +71,9 @@ Treatment of ONIOM calculations:
 g16SI detects gaussian ONIOM calculations modifying its behaviour to:
 
 -Automatically add a character (“L”, “M” or “H”) for specifying the layer of each atom in the .doc file.
+
 -If used in the energy file, the “ONIOM extrapolated energy” will be printed. 
+
 -Add a different residue name in the generated .pdb file, so settings in pymol can allow different representations of each layer.
 
 
